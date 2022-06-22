@@ -13,7 +13,7 @@
 html {
     color: #222;
     font-size: 1em;
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 /*
@@ -25,12 +25,10 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
     text-shadow: none;
 }
 
@@ -40,7 +38,7 @@ html {
 
 hr {
     display: block;
-    height: 1px;
+    height: 2px;
     border: 0;
     border-top: 1px solid #ccc;
     margin: 1em 0;
@@ -88,7 +86,7 @@ textarea {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
-    padding: 0.2em 0;
+    padding: 0.1em 0;
 }
 
 /* ==========================================================================
@@ -102,33 +100,90 @@ html {
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  padding: 0 2em;
-  font-size: 1.25em;
-  height: 100%;
-  color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.25em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+    margin-right:auto;
 }
 
-header,
-footer {
-  background-color: #222;
-  height: 80px;
-  width: 100%;
+header {
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-style:solid;
+    border-color: hotpink;
+    display: flex;
+    justify-content: flex-start;
+    margin:auto;
+    
 }
+
 
 main {
-  background-color: #ccc;
+  background-color: black;
   height: 250px;
   width: 100%;
+  font-size: 32px;
+  border-style: solid;
+  border-color: hotpink;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
 }
 
 header,
-footer,
 main {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.35em;
+}
 
+header {
+    background-color: black;
+    border-color: hotpink;
+    font-size: 32px;
+}
+main {
+    background-color: black;
+    font-size: 1em;
+}
+
+div1 {
+    background-color: black;
+    font-size: 2em;
+    text-overflow: auto;
+}
+
+div1 p {
+    font-size: 0.5em;
+}
+
+
+
+div2 {
+    background-color: black;
+    font-size: 2em;
+    text-overflow: auto;
+}
+
+div2 p {
+    font-size: 0.5em;
+}
+
+div3 {
+   background-color: black;
+   font-size: 2em;
+   text-overflow: auto;
+}
+
+div3 p {
+    font-size: 0.5em; 
 }
 
 .flex-container {
@@ -137,16 +192,17 @@ main {
     align-items: center;
     flex-flow: row wrap;
     justify-content: space-between;
+    max-width: 1200px;
 }
 
 .flex-items {
   color: #fff;
-  line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
+  line-height: 1.6em;
+  font-size: 1em;
+  background-color: black;
   width: 30%;
-  height: 200px;
-  display: flex;
+  height: 300px;
+  flex-shrink:inherit;
   justify-content: center;
   align-items: center;
 }
